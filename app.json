@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "LearnGerman",
+    "name": "Deutsche Wörter",
     "slug": "LearnGerman",
-    "version": "1.0.0",
+    "version": "2.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -21,6 +21,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.botsy.LearnGerman",
+      "versionCode": 3
     }
   }
 }
