@@ -1,37 +1,23 @@
+import 'react-native-gesture-handler';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, Text, View, TouchableOpacity, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import DerDieDas from "./DerDieDas";
 
-export default Grammar = () => {
 
-    useEffect(() => {
-        getObjects().then((response) => {
-    
-          setRes(response.slice());
-          setRes2(response.slice());
-    
-    
-        })
-      }, []);
+export default Grammar = ({ navigation }) => {
 
-      getObjects = async () => {
-        try {
-          const response = await fetch(
-            'https://german-words.000webhostapp.com/wp-json/wp/v1/words'
-          )
-          if (response.status === 200) {
-            const json = await response.json()
-            return json
-          }
-        } catch (error) {
-          console.error(error)
-        }
-        return false
-      }
 
       return (
 
+        
+        <View style={styles.container}>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DerDieDas')}><Text style={styles.play}> Der, Die, Das </Text></TouchableOpacity>
+      
+        </View>
       );
-}
+  }
 
 const styles = StyleSheet.create({
     container: {
@@ -73,5 +59,12 @@ const styles = StyleSheet.create({
       right: 0,
       bottom: 150,
       fontSize: 40,
-    }
+    },
+    grammarText: {
+      marginBottom: 20,
+      color: "#495464",
+      fontWeight: "bold",
+      marginTop: "10%",
+      fontSize: 18,
+    },
   });

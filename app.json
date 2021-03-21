@@ -24,7 +24,8 @@
     },
     "android": {
       "package": "com.botsy.LearnGerman",
-      "versionCode": 3
+      "versionCode": 4,
+      "permissions": []
     }
   }
 }
