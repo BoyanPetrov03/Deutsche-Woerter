@@ -13,7 +13,7 @@ export default Grammar = ({ navigation }) => {
 
         
         <View style={styles.container}>
-          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DerDieDas')}><Text style={styles.play}> Der, Die, Das </Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Der Die Das')}><Text style={styles.play}> Der, Die, Das </Text></TouchableOpacity>
       
         </View>
       );
@@ -31,6 +31,10 @@ const styles = StyleSheet.create({
       backgroundColor: "#bbbfca",
       padding: 10,
       margin: 5,
+    },
+    play: {
+      color: "#ffe05d",
+      fontWeight: "bold",
     },
     germanWord: {
       color: "#ffe05d",

@@ -15,10 +15,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Game" component={Game} />
-        <Stack.Screen name="Grammar" component={Grammar} />
-        <Stack.Screen name="DerDieDas" component={DerDieDas} />
+        <Stack.Screen name="Начало" component={HomeScreen} />
+        <Stack.Screen name="Игра на думи" component={Game} />
+        <Stack.Screen name="Граматика" component={Grammar} />
+        <Stack.Screen name="Der Die Das" component={DerDieDas} />
       </Stack.Navigator>
     </NavigationContainer>
   );

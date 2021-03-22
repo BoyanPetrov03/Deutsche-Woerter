@@ -14,8 +14,8 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.instruction}>Можете да продължите напред, само ако изберете правилната дума. При всеки правилен отговор получавате по 1 точка, а при всеки грешен ви се отнема по 1. Можете ли да стигнете до 100?</Text>
         <Text style = {styles.instruction}>За играта трябва интернет!</Text>
 
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Game')}><Text style={styles.play}> Започни игра! </Text></TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Grammar')}><Text style={styles.play}> Започни да учиш граматика! </Text></TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Игра на думи')}><Text style={styles.play}> Започни игра! </Text></TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Граматика')}><Text style={styles.play}> Започни да учиш граматика! </Text></TouchableOpacity>
     </View>
   );}
 
