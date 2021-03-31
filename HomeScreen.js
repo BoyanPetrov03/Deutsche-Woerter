@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Game from "./Game";
 import Grammar from "./Grammar";
+import { AdMobBanner } from "expo";
 
 
 export default function HomeScreen({ navigation }) {
@@ -18,6 +19,7 @@ export default function HomeScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Граматика')}><Text style={styles.play}> Започни да учиш граматика! </Text></TouchableOpacity>
     </View>
   );}
+
 
 
 const styles = StyleSheet.create({
@@ -50,7 +52,11 @@ const styles = StyleSheet.create({
       fontWeight: "bold",
       fontSize: 18,
       textAlign: 'center',
-    }
+    },
+    bottomBanner: {
+      position: "absolute",
+      bottom: 0
+    },
   
   });
 

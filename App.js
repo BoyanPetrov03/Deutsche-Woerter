@@ -7,7 +7,10 @@ import Game from "./Game";
 import Grammar from "./Grammar";
 import HomeScreen from "./HomeScreen";
 import DerDieDas from "./DerDieDas";
-
+import Nominativ from "./Nominativ";
+import Akkusativ from "./Akkusativ";
+import Dativ from "./Dativ";
+import Genetiv from "./Genetiv"
 
 const Stack = createStackNavigator();
 
@@ -19,6 +22,10 @@ export default function App() {
         <Stack.Screen name="Игра на думи" component={Game} />
         <Stack.Screen name="Граматика" component={Grammar} />
         <Stack.Screen name="Der Die Das" component={DerDieDas} />
+        <Stack.Screen name="Nominativ" component={Nominativ} />
+        <Stack.Screen name="Akkusativ" component={Akkusativ} />
+        <Stack.Screen name="Dativ" component={Dativ} />
+        <Stack.Screen name="Genetiv" component={Genetiv} />
       </Stack.Navigator>
     </NavigationContainer>
   );

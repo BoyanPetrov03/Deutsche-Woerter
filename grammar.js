@@ -1,19 +1,17 @@
 import 'react-native-gesture-handler';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, Text, View, TouchableOpacity, StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import DerDieDas from "./DerDieDas";
-
 
 export default Grammar = ({ navigation }) => {
-
-
+  
       return (
 
-        
         <View style={styles.container}>
           <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Der Die Das')}><Text style={styles.play}> Der, Die, Das </Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Nominativ')}><Text style={styles.play}> Nominativ </Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Akkusativ')}><Text style={styles.play}> Akkusativ </Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Dativ')}><Text style={styles.play}> Dativ </Text></TouchableOpacity>
+          <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Genetiv')}><Text style={styles.play}> Genetiv </Text></TouchableOpacity>
       
         </View>
       );
